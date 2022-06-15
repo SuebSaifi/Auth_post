@@ -1,0 +1,14 @@
+<div class="container">
+<div class="card mx-5 my-5" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%=@post.title%></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%=@post.description%></h6> 
+    <%# <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a> %>
+  </div>
+</div>
+
+<p id="notice"><%= notice %></p>
+<%= link_to 'Edit', edit_post_path(@post),class:"btn btn-secondary text-light " %> 
+<%= link_to 'Back', posts_path,class:"btn btn-info text-dark" %>
+</div>
